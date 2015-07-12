@@ -1,0 +1,8 @@
+/* Add here all your css styles (customizations) */
+    .preview-panel {
+        height: 260px;
+        overflow:hidden;
+    }
+    .less-bottom-margin {
+    margin-bottom: 20px;
+    }
