@@ -4,132 +4,168 @@
  * Version: 1.8
  * Author: @htmlstream
  * Website: http://htmlstream.com
-*/
+ */
 
-var App = function() {
+var App = function () {
 
-  function handleBootstrap() {
-    /*Bootstrap Carousel*/
-    jQuery('.carousel').carousel({
-      interval: 15000,
-      pause: 'hover'
-    });
+    function handleBootstrap() {
+        /*Bootstrap Carousel*/
+        jQuery('.carousel').carousel({
+            interval: 15000,
+            pause: 'hover'
+        });
 
-    /*Tooltips*/
-    jQuery('.tooltips').tooltip();
-    jQuery('.tooltips-show').tooltip('show');
-    jQuery('.tooltips-hide').tooltip('hide');
-    jQuery('.tooltips-toggle').tooltip('toggle');
-    jQuery('.tooltips-destroy').tooltip('destroy');
+        /*Tooltips*/
+        jQuery('.tooltips').tooltip();
+        jQuery('.tooltips-show').tooltip('show');
+        jQuery('.tooltips-hide').tooltip('hide');
+        jQuery('.tooltips-toggle').tooltip('toggle');
+        jQuery('.tooltips-destroy').tooltip('destroy');
 
-    /*Popovers*/
-    jQuery('.popovers').popover();
-    jQuery('.popovers-show').popover('show');
-    jQuery('.popovers-hide').popover('hide');
-    jQuery('.popovers-toggle').popover('toggle');
-    jQuery('.popovers-destroy').popover('destroy');
-  }
-
-  var handleFullscreen = function() {
-    var WindowHeight = $(window).height();
-
-    if ($(document.body).hasClass("promo-padding-top")) {
-      HeaderHeight = $(".header").height();
-    } else {
-      HeaderHeight = 0;
+        /*Popovers*/
+        jQuery('.popovers').popover();
+        jQuery('.popovers-show').popover('show');
+        jQuery('.popovers-hide').popover('hide');
+        jQuery('.popovers-toggle').popover('toggle');
+        jQuery('.popovers-destroy').popover('destroy');
     }
 
-    $(".fullheight").css("height", WindowHeight - HeaderHeight);
+    var handleFullscreen = function () {
+        var WindowHeight = $(window).height();
 
-    $(window).resize(function() {
-      var WindowHeight = $(window).height();
-      $(".fullheight").css("height", WindowHeight - HeaderHeight);
-    });
-  }
+        if ($(document.body).hasClass("promo-padding-top")) {
+            HeaderHeight = $(".header").height();
+        } else {
+            HeaderHeight = 0;
+        }
 
-  // handleLangs
-  function handleLangs() {
-    $(".lang-block").click(function() {
-      console.log("click!");
-    });
-  }
+        $(".fullheight").css("height", WindowHeight - HeaderHeight);
 
-  var handleValignMiddle = function() {
-    $(".valign__middle").each(function() {
-      $(this).css("padding-top", $(this).parent().height() / 2 - $(this).height() / 2);
-    });
-    $(window).resize(function() {
-      $(".valign__middle").each(function() {
-        $(this).css("padding-top", $(this).parent().height() / 2 - $(this).height() / 2);
-      });
-    });
-  }
+        $(window).resize(function () {
+            var WindowHeight = $(window).height();
+            $(".fullheight").css("height", WindowHeight - HeaderHeight);
+        });
+    }
 
-  function handleHeader() {
-    //jQuery to collapse the navbar on scroll
-    $(window).scroll(function() {
-      if ($(".navbar").offset().top > 150) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-      } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-      }
-    });
+    // handleLangs
+    function handleLangs() {
+        $(".lang-block").click(function () {
+            console.log("click!");
+        });
+    }
 
-    //jQuery for page scrolling feature - requires jQuery Easing plugin
-    $(function() {
-      $('.page-scroll a').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-          scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-      });
-    });
+    var handleValignMiddle = function () {
+        $(".valign__middle").each(function () {
+            $(this).css("padding-top", $(this).parent().height() / 2 - $(this).height() / 2);
+        });
+        $(window).resize(function () {
+            $(".valign__middle").each(function () {
+                $(this).css("padding-top", $(this).parent().height() / 2 - $(this).height() / 2);
+            });
+        });
+    }
 
-    //Collapse Navbar When It's Clickicked
-    $(window).scroll(function() {
-      $(".navbar-collapse.in").collapse('hide');
-    });
-    $( "#expandWashingtonUpdate, #shrinkWashingtonUpdate" ).click(function( event ) {
-        //event.preventDefault();
-        $("#washingtonUpdate" ).toggleClass("preview-panel");
-        $("#expandWashingtonUpdate").toggleClass("hide");
-        $("#shrinkWashingtonUpdate").toggleClass("hide");
-    });
- }
+    function handleHeader() {
+        //jQuery to collapse the navbar on scroll
+        $(window).scroll(function () {
+            if ($(".navbar").offset().top > 150) {
+                $(".navbar-fixed-top").addClass("top-nav-collapse");
+            } else {
+                $(".navbar-fixed-top").removeClass("top-nav-collapse");
+            }
+        });
 
-  return {
-    init: function() {
-      handleHeader();
-      handleBootstrap();
-      //handleLangs();
-      handleFullscreen();
-      handleValignMiddle();
-    },
+        //jQuery for page scrolling feature - requires jQuery Easing plugin
+        $(function () {
+            $('.page-scroll a').bind('click', function (event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
 
-    initCounter: function() {
-      jQuery('.counter').counterUp({
-        delay: 10,
-        time: 1000
-      });
-    },
+        //Collapse Navbar When It's Clickicked
+        $(window).scroll(function () {
+            $(".navbar-collapse.in").collapse('hide');
+        });
+        $("#expandWashingtonUpdate, #shrinkWashingtonUpdate").click(function (event) {
+            //event.preventDefault();
+            $("#washingtonUpdate").toggleClass("preview-panel");
+            $("#expandWashingtonUpdate").toggleClass("hide");
+            $("#shrinkWashingtonUpdate").toggleClass("hide");
+        });
+    }
 
-    initParallaxBg: function() {
-      $(window).load(function() {
-        jQuery('.parallaxBg').parallax("50%", 0.4);
-        jQuery('.parallaxBg1').parallax("50%", 0.2);
-      });
-    },
+    return {
+        init: function () {
+            handleHeader();
+            handleBootstrap();
+            //handleLangs();
+            handleFullscreen();
+            handleValignMiddle();
+        },
 
-    initParallaxBg2: function() {
-      $(window).load(function() {
-        jQuery('.parallaxBg').parallax("50%", "50%");
-      });
-    },
+        initCounter: function () {
+            jQuery('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        },
 
-  };
+        initParallaxBg: function () {
+            $(window).load(function () {
+                jQuery('.parallaxBg').parallax("50%", 0.4);
+                jQuery('.parallaxBg1').parallax("50%", 0.2);
+            });
+        },
 
-    
+        initParallaxBg2: function () {
+            $(window).load(function () {
+                jQuery('.parallaxBg').parallax("50%", "50%");
+            });
+        },
+
+    };
+
+
 
 }();
+var ContactPage = function () {
 
+    return {
+
+        //Basic Map
+        initMap: function () {
+            var map;
+            $(document).ready(function () {
+                map = new GMaps({
+                    div: '#map',
+                    scrollwheel: false,
+                    lat: 38.903788,
+                    lng: -77.038035
+                });
+
+                var marker = map.addMarker({
+                    lat: 38.903788,
+                    lng: -77.038035,
+                    title: 'CHG & Associates 1660 L St. NW #501, Washington DC 20036'
+                });
+            });
+        },
+
+        //Panorama Map
+        initPanorama: function () {
+            var panorama;
+            $(document).ready(function () {
+                panorama = GMaps.createPanorama({
+                    el: '#panorama',
+                    lat: 38.903788,
+                    lng: -77.038035
+                });
+            });
+        }
+
+    };
+}();
