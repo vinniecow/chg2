@@ -24,7 +24,26 @@
 .map-box-space1 {
 	margin-top: 7px;
 }
-.share {
-  float: right;
-  margin-right: 5px;
+.img-responsive-centered {
+    margin:0 auto;
+}
+.team-member {
+    margin-top: 80px;
+}
+.news-v1 p {
+    font-size: 12pt;
+}
+.map-info-window{
+    color:black
+}
+.map-info-window .gm-title{
+    font-weight: 500;
+}
+
+.map-info-window .gm-website a{
+    color:black
+}
+
+.map-info-window .gm-phone a{
+    color:black
 }

@@ -90,12 +90,8 @@ var App = function () {
         $(window).scroll(function () {
             $(".navbar-collapse.in").collapse('hide');
         });
-        $("#expandWashingtonUpdate, #shrinkWashingtonUpdate").click(function (event) {
-            //event.preventDefault();
-            $("#washingtonUpdate").toggleClass("preview-panel");
-            $("#expandWashingtonUpdate").toggleClass("hide");
-            $("#shrinkWashingtonUpdate").toggleClass("hide");
-        });
+
+
     }
 
     return {
@@ -127,6 +123,12 @@ var App = function () {
             });
         },
 
+        toggleWashingtonUpdate: function () {
+            $("#washingtonUpdate").toggleClass("preview-panel");
+            $("#expandWashingtonUpdate").toggleClass("hide");
+            $("#shrinkWashingtonUpdate").toggleClass("hide");
+        }
+
     };
 
 
@@ -150,8 +152,13 @@ var ContactPage = function () {
                 var marker = map.addMarker({
                     lat: 38.903788,
                     lng: -77.038035,
-                    title: 'CHG & Associates 1660 L St. NW #501, Washington DC 20036'
+                    title: 'CHG & Associates 1660 L St. NW #501, Washington DC 20036',
+                    infoWindow: {
+                        content: '<span class="map-info-window"><div class="gm-title">CHG &amp; Associates: Transit Solutions</div><div class="gm-basicinfo" jstcache="0"><div class="gm-addr" jsdisplay="i.result.formatted_address" jscontent="i.result.formatted_address" jstcache="3">1660 L St NW, Washington, DC 20036, United States</div><div class="gm-website" jsdisplay="web" jstcache="4"><a jscontent="web" jsvalues=".href:i.result.website" target="_blank" jstcache="10" href="http://www.chgassociates.com">www.chgassociates.com</a></div><div class="gm-phone" jsdisplay="i.result.formatted_phone_number" jscontent="i.result.formatted_phone_number" jstcache="5"><a href="tel:2029692090"> 1-(202) 969 2090</a></div></span>'
+                    }
                 });
+
+
             });
         },
 
@@ -169,3 +176,25 @@ var ContactPage = function () {
 
     };
 }();
+
+
+var handleWashingtonUpdateUrl = function () {
+    var hashVal = window.location.hash.split("#")[1];
+    if (hashVal == 'wu') {
+        App.toggleWashingtonUpdate();
+    }
+}
+
+handleWashingtonUpdateUrl();
+
+
+$("#expandWashingtonUpdate, #shrinkWashingtonUpdate, #showWashingtonUpdate").click(function (event) {
+    //event.preventDefault();
+    App.toggleWashingtonUpdate();
+});
+
+$("#showWashingtonUpdate").click(function (event) {
+    if ($("#washingtonUpdate").hasClass("preview-panel")) {
+        App.toggleWashingtonUpdate();
+    }
+});

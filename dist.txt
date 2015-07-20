@@ -1,285 +1,152 @@
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
+[4mRunning "newer:jshint" (newer) task[24m
 
-<head>
-    <title>CHG &amp; Associates | Transit Solutions</title>
+[4mRunning "newer:jshint:all" (newer) task[24m
 
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CHG &amp; Associates: Transit Solutions">
-    <meta name="author" content="CHG &amp; Associates">
+[4mRunning "jshint:all" (jshint) task[24m
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" alt="transit">
-
-    <!-- Web Fonts -->
-    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
-
-    <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/one.style.css">
-
-    <!-- CSS Footer -->
-    <link rel="stylesheet" href="assets/css/footers/footer-v7.css">
-
-    <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="assets/plugins/animate.css">
-    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/plugins/pace/pace-flash.css">
-    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="assets/plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css">
-    <link rel="stylesheet" href="assets/plugins/cube-portfolio/cubeportfolio/custom/custom-cubeportfolio.css">
-    <link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings.css" type="text/css" media="screen">
-    <!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
-
-    <!-- Style Switcher -->
-    <link rel="stylesheet" href="assets/css/plugins/style-switcher.css">
-
-    <!-- CSS Theme -->
-    <link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
-
-    <!-- CSS Customization -->
-    <link rel="stylesheet" href="assets/css/custom.css">
-</head>
-
-<!--
-The #page-top ID is part of the scrolling feature.
-The data-spy and data-target are part of the built-in Bootstrap scrollspy function.
--->
-
-<body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery">
-    <!--=== Header ===-->
-    <nav class="one-page-header navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="menu-container page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <a class="navbar-brand" href="#intro">
-                    <span>CHG</span> & Associates
-                    <!-- <img src="assets/img/logo1.png" alt="Logo"> -->
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <div class="menu-container">
-                    <ul class="nav navbar-nav">
-                        <li class="page-scroll home">
-                            <a href="#body">Home</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a href="#services">Our Services</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a href="#firm">Our Firm</a>
-                        </li>
-
-                        <li class="page-scroll">
-                            <a href="#news">News</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a href="#portfolio">Our Clients</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a href="#contact">Contact</a>
-                        </li>
-                        <!--<li class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                                Submenu
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="page-scroll"><a href="#body">Home</a></li>
-                                <li class="page-scroll"><a href="#services">Our Services</a></li>
-                                <li class="page-scroll"><a href="#firm">Our Firm</a></li>
-                                <li class="page-scroll"><a href="#news">News</a></li>
-                                <li class="page-scroll"><a href="#portfolio">Our Clients</a></li>
-                                <li class="page-scroll"><a href="#contact">Contact</a></li>
-                            </ul>
-                        </li>-->
-                        <!--
-                        <li class="page-scroll">
-                            <a href="../index.html">Main</a>
-                        </li>-->
-                    </ul>
-                </div>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-    <!--=== End Header ===-->
-
-    <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-        <div class="fullscreenbanner-container">
-            <div class="fullscreenbanner">
-                <ul>
-                    <!-- SLIDE 1 -->
-                    <li data-transition="curtain-1" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
-                        <!-- MAIN IMAGE -->
-                        <img src="images/titlebg.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-
-                        <!-- LAYERS -->
-                        <div class="tp-caption rs-caption-1 sft start" data-x="center" data-hoffset="0" data-y="100" data-speed="800" data-start="2000" data-easing="Back.easeInOut" data-endspeed="300">
-                            CHG &amp; Associates
-                        </div>
-
-                        <!-- LAYER -->
-                        <div class="tp-caption rs-caption-2 sft" data-x="center" data-hoffset="0" data-y="200" data-speed="1000" data-start="3000" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
-                            Transit Solutions
-                        </div>
-
-                        <!-- LAYER -->
-                        <div class="tp-caption rs-caption-3 sft" data-x="center" data-hoffset="0" data-y="360" data-speed="800" data-start="3500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
-                            <span class="page-scroll"><a href="#about" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a></span>
-                            <span class="page-scroll"><a id="showWashingtonUpdate" href="#wu" class="btn-u btn-brd btn-brd-hover btn-u-light" alt="Legislative transit news from Washington DC">Read Washington Update</a></span>
-                            <span class="page-scroll"><a href="#services" class="btn-u btn-brd btn-brd-hover btn-u-light">Our Services</a></span>
-                        </div>
-                    </li>
-                </ul>
-                <div class="tp-bannertimer tp-bottom"></div>
-                <div class="tp-dottedoverlay twoxtwo"></div>
-            </div>
-        </div>
-    </section>
-    <!-- End Intro Section -->
-
-    <!--  About Section -->
-    <section id="about" class="about-section section-first">
-        <div class="block-v1">
-            <div class="container">
-                <div class="row content-boxes-v3">
-                    <div class="col-md-4 md-margin-bottom-30">
-                        <i class="icon-custom rounded-x icon-bg-dark fa fa-institution"></i>
-                        <div class="content-boxes-in-v3">
-                            <h2 class="heading-sm">Federal Government Relations</h2>
-                            <p>Monitoring Washington and putting you a step ahead of upcoming legislation</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 md-margin-bottom-30">
-                        <i class="icon-custom rounded-x icon-bg-dark fa fa-subway"></i>
-                        <div class="content-boxes-in-v3">
-                            <h2 class="heading-sm">Winning Federal Grants</h2>
-                            <p>Proven strategies through the complex federal grant process, leading to success</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <i class="icon-custom rounded-x icon-bg-dark fa fa-flask"></i>
-                        <div class="content-boxes-in-v3">
-                            <h2 class="heading-sm">Drafting and Research</h2>
-                            <p>Our technical expertise ranges from preparing congressional testimony to drafting legislative language</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="about-image bg-grey">
-            <div class="container">
-                <div class="title-v1">
-                    <h1>CHG &amp; Associates</h1>
-                    <p>Transit solutions</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--  About Section -->
-    <!-- Services section-->
-    <section id="services">
-        <div class="container content-lg">
-            <div class="title-v1">
-                <h2>What we do</h2>
-                <p></p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12 content-boxes-v3 margin-bottom-40">
-                    <div class="clearfix margin-bottom-30">
-                        <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-star"></i>
-                        <div class="content-boxes-in-v3">
-                            <h2 class="heading-sm">Federal Government Relations</h2>
-                            <p>CHG continuously monitors developments in Washington, DC that are important to clients, communicates significant proposed actions to clients, and helps develop and communicate client positions to congressional and Administration staff and principals. We maintain on-going contact with Federal agencies and committees that correspond to the Federal agenda and remain alert to all areas which could have a beneficial or detrimental impact on clients. When clients travel to Washington, we coordinate all Washington activities; CHG schedules and prepares clients for meetings with their congressional delegation, authorizing and appropriations committee chairs and staff, senior executive and legislative branch officials and their State office, as appropriate. </p>
-
-                            CHG communicates with clients on a daily, weekly and monthly basis, as appropriate, on the results of our efforts to:
-                            <ul>
-                                <li>Monitor legislation and agency rulemaking</li>
-                                <l1>Identify ongoing or discretionary grant opportunities, including opportunities such as TIGER grants, and assisting staff in preparing grant applications</l1>
-                                <li>Participate in coalition meetings</li>
-                                <li>Attend Congressional mark-ups and hearings</li>
-                                <li>Meet with congressional and committee offices, Federal agency and Administration officials in order to advance client’s interests</li>
-                                <li>Represent clients at public interest group meetings in DC, and</li>
-                                <li>Track pertinent Federal policy and monitor appropriations and authorizing legislation with regular reports to clients</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="clearfix margin-bottom-30">
-                        <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-star"></i>
-                        <div class="content-boxes-in-v3">
-                            <h2 class="heading-sm">Winning Federal Grants</h2>
-                            <p>CHG assists in obtaining and expediting Federal grants. Working in conjunction with Federal agencies, the firm advises clients on how to satisfy planning, procurement, environmental, Buy America, labor, ADA, and other Federal grant requirements. The firms also provide technical and management advice during all phases of project development, helping navigate complex Federal processes, educating and advising local public officials, local boards/councils and client staff. The firm will helps maintain and advance relationships with key Federal agency staff at both the regional and headquarters level.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="clearfix margin-bottom-30">
-                        <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-star"></i>
-                        <div class="content-boxes-in-v3">
-                            <h2 class="heading-sm">Drafting and Research</h2>
-                            <p>CHG provide technical and strategic help to clients and delegation staff to draft any needed legislative language, congressional testimony, floor statements, and letters, and to offer advice on how to respond to requests for information. In addition to helping with any written briefing materials, we would also assist in preparing and presenting oral communications, whether they are formal testimony before committees or informal briefings with small groups or individuals. We will serve as an extension of client staff, as well as that of the Members’ staff, ensuring they have the research, legislative, and technical support, and staffing resources necessary.</p>
-                        </div>
-                    </div>
-                </div>
+√ No problems
 
 
-            </div>
-        </div>
-    </section>
+[4mRunning "newer-postrun:jshint:all:1:c:\code\chg2\node_modules\grunt-newer\.cache" (newer-postrun) task[24m
 
-    <div class="parallax-quote parallaxBg">
-        <div class="container">
-            <div class="parallax-quote-in">
-                <p>Everywhere I go, I see incredible examples of communities that have a vision for transportation and how it will impact the quality of life, mobility, economics and opportunity.</p>
-                <small>- Secretary Anthony Foxx -</small>
-            </div>
-        </div>
-    </div>
-    <section id="firm" <div class="team-v1 bg-grey content-lg">
+[4mRunning "test" task[24m
+
+[4mRunning "clean:server" (clean) task[24m
+[32m>> [39m1 path cleaned.
+
+[4mRunning "concurrent:test" (concurrent) task[24m
+    
+[4mRunning "copy:styles" (copy) task[24m
+Copied 1 file
+
+[32mDone, without errors.[39m
+
+
+Execution Time (2015-07-18 03:10:44 UTC)
+loading tasks               265ms  ███████████████████████████████ 90%
+loading grunt-contrib-copy   16ms  ██ 5%
+copy:styles                  15ms  ██ 5%
+Total 296ms
+
+[4mRunning "postcss:dist" (postcss) task[24m
+[32m>> [39m1 processed stylesheet created.
+
+[4mRunning "browserSync:test" (browserSync) task[24m
+
+[4mRunning "mocha:all" (mocha) task[24m
+Testing: http://localhost:9001/index.html
+
+  
+  .
+
+  1 passing (110ms)
+
+[32m>> [39m1 passed! (0.11s)
+
+[4mRunning "clean:dist" (clean) task[24m
+[32m>> [39m2 paths cleaned.
+
+[4mRunning "wiredep:app" (wiredep) task[24m
+
+[4mRunning "useminPrepare:html" (useminPrepare) task[24m
+Configuration changed for [36mconcat[39m, [36muglify[39m, [36mcssmin[39m
+
+[4mRunning "concurrent:dist" (concurrent) task[24m
+    
+[4mRunning "copy:styles" (copy) task[24m
+Copied 1 file
+
+[32mDone, without errors.[39m
+
+
+Execution Time (2015-07-18 03:10:50 UTC)
+loading tasks               437ms  █████████████████████████████ 85%
+loading grunt-contrib-copy   46ms  ████ 9%
+copy:styles                  32ms  ███ 6%
+Total 515ms
+    
+[4mRunning "svgmin:dist" (svgmin) task[24m
+Total saved: 0 B
+
+[32mDone, without errors.[39m
+
+
+Execution Time (2015-07-18 03:10:50 UTC)
+loading tasks         421ms  ███████████████████████████ 66%
+loading grunt-svgmin  140ms  █████████ 22%
+svgmin:dist            78ms  █████ 12%
+Total 639ms
+    
+[4mRunning "imagemin:dist" (imagemin) task[24m
+Minified 15 images (saved 179.91 kB)
+
+[32mDone, without errors.[39m
+
+
+Execution Time (2015-07-18 03:10:50 UTC)
+loading tasks                   343ms  ███ 8%
+loading grunt-contrib-imagemin  672ms  █████ 15%
+imagemin:dist                    3.5s  ████████████████████████ 78%
+Total 4.5s
+
+[4mRunning "postcss:dist" (postcss) task[24m
+[32m>> [39m1 processed stylesheet created.
+[31m>> [39mNo "concat" targets found.
+[33mWarning: Task "concat" failed. [4mUsed --force, continuing.[24m[39m
+[31m>> [39mNo "cssmin" targets found.
+[33mWarning: Task "cssmin" failed. [4mUsed --force, continuing.[24m[39m
+[31m>> [39mNo "uglify" targets found.
+[33mWarning: Task "uglify" failed. [4mUsed --force, continuing.[24m[39m
+
+[4mRunning "copy:dist" (copy) task[24m
+Copied 10 files
+
+[4mRunning "filerev:dist" (filerev) task[24m
+Revved 17 files
+
+[4mRunning "usemin:html" (usemin) task[24m
+Replaced 2 references to assets
+
+[4mRunning "usemin:css" (usemin) task[24m
+Replaced 0 references to assets
+
+[4mRunning "htmlmin:dist" (htmlmin) task[24m
+[33mWarning: dist/index.html
+Parse Error: <section id="firm" <div class="team-v1 bg-grey content-lg">
         <div class="container">
             <div class="title-v1">
-                <h2>Our Firm</h2>
-                <p>CHG &amp; Associates has decades of experience in helping our clients navigate the complex regulations and procedures of the Federal Government, in order to realize the opportunities and successful transit solutions that Washington can provide.</p
-            </div>
-            <div class="title-v1 team-member">
-                <h2>Meet Our President</h2>
-                <!-- <p>We are ready to use our years of expertise and our relationships in Washingon to help our clients achieve success in Washington</p>-->
+                <h2>Meet Our Team</h2>
+                <p>We are ready to use our years of expertise and our relationships in Washingon to help our clients achieve success in Washington</p>
             </div>
 
-            <ul class="list-unstyled row row-centered">
-                <li class="col-sm-12 md-margin-bottom-30 col-centered">
+            <ul class="list-unstyled row">
+                <li class="col-sm-6 col-xs-6 md-margin-bottom-30">
                     <div class="team-img">
-                        <img class="img-responsive img-responsive-centered" src="images/firm/anja.png" alt="Ms. Anja Graves">
+                        <img class="img-responsive" src="images/firm/anja.8731e203.png" alt="Ms. Anja Graves">
+                        <!-- <ul>
+                                <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-google-plus"></i></a></li>
+                            </ul>-->
+                    </div>
+                    <h3>Anja Graves</h3>
+                    <h4>/ President</h4>
+                    <p>Anja Graves holds a BA from the University of California and a Masters in Urban Planning from New York University. Prior to working with CHG and Associates, she held a position in the Secretary's Office at HUD. Working closely with former Secretaries Andrew Cuomo and Mel Martinez, she managed a procurement and budgeting process, contracts and grants, project evaluations and HUD’s role in housing reconstruction in Central America after hurricanes Mitch and George. Ms. Graves has expertise in local and state government through her work as a planner for the City of San Jose as well as an environmental planner working for the powerful Silicon Valley Manufacturing Group in California. She is the Federal liason for clients including the Washoe County Regional Transportation Commission in Reno, NV, the Utah Transit Authority in Salt Lake City, UT, City of Port Aransas, TX, Sparks, NV and the Town of Normal, IL. Member of the APTA Washington Representatives, Women in Transportation Seminar, New Starts Working Group, Streetcar Coalition and the Road Gang. For over 15 years, Ms. Graves has maintained strong relationships with transportation authorizers and appropriators and their staff in both the House and Senate.</p>
+                </li>
+                <li class="col-sm-1 col-xs-1 md-margin-bottom-30"></li>
+                <li class="col-sm-5 col-xs-5 md-margin-bottom-30">
+                    <div class="team-img">
+                        <img class="img-responsive" src="images/firm/Brad.de9699cb.png" alt="">
                         <ul>
-                            <li><a href="mailto:anjagraves@chgassociates.com"><i class="icon-custom icon-sm rounded-x fa fa-envelope"></i></a></li>
-                            <li><a href="tel:2029692090"><i class="icon-custom icon-sm rounded-x fa fa-phone"></i></a></li>
-                            <li><a href="https://www.linkedin.com/pub/anja-graves/46/b82/a0b"><i class="icon-custom icon-sm rounded-x fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-google-plus"></i></a></li>
                         </ul>
                     </div>
-                    <span class="text-center">
-                        <h3>Anja Graves</h3>
-                        <p>Anja Graves holds a BA from the University of California and a Masters in Urban Planning from New York University. Prior to working with CHG &amp; Associates, she held a position in the Secretary's Office at HUD. Working closely with former Secretaries Andrew Cuomo and Mel Martinez, she managed a procurement and budgeting process, contracts and grants, project evaluations and HUD’s role in housing reconstruction in Central America after hurricanes Mitch and George. Ms. Graves has expertise in local and state government through her work as a planner for the City of San Jose as well as an environmental planner working for the powerful Silicon Valley Manufacturing Group in California. She is the Federal liason for clients including the Washoe County Regional Transportation Commission in Reno, NV, the Utah Transit Authority in Salt Lake City, UT, City of Port Aransas, TX, Sparks, NV and the Town of Normal, IL. Member of the APTA Washington Representatives, Women in Transportation Seminar, New Starts Working Group, Streetcar Coalition and the Road Gang. For over 15 years, Ms. Graves has maintained strong relationships with transportation authorizers and appropriators and their staff in both the House and Senate.</p>
-                    </span>
+                    <h3>Brad</h3>
+                    <h4>/ Head of Government Relations</h4>
+                    <p>Brad's bio</p>
                 </li>
-
                 <!-- <li class="col-sm-3 col-xs-6">
                         <div class="team-img">
                             <img class="img-responsive" src="assets/img/team/img3-md.jpg" alt="">
@@ -442,10 +309,10 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <!-- End Services Section -->
     <!-- News Section -->
     <section id="news" class="news-section">
-        <div id="wu" class="container content-lg">
+        <div id = "wu" class="container content-lg">
             <div class="title-v1">
                 <h2>Latest News</h2>
-                <p>CHG &amp; Associates provides regular updates of the legistlative climate in Washington regarding transit. We call this service Washington Update. <a href="mailto:?to=&subject=Washington%20Update%20from%20CHG%20%26%20Associates&body=CHG%20%26%20Associates%20has%20published%20legislative%20news%20related%20to%20transit.%20Please%20take%20a%20look%3A%20http%3A%2F%2Fwww.chgassociates.com%2F%23wu" class="fa fa-share-alt ">&nbsp;share</a></p>
+                <p>CHG and Associates provides regular updates of the legistlative climate in Washington regarding transit. We call this service Washington Update. </p>
             </div>
 
             <div class="row news-v1">
@@ -523,9 +390,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         </div>
                         <div class="text-center h4">
                             <a id="expandWashingtonUpdate" href="#news" class="fa fa-chevron-circle-down">&nbsp;read more</a>
-
                             <a id="shrinkWashingtonUpdate" href="#news" class="fa fa-chevron-circle-up hide">&nbsp;read less</a>
-
+                            <a href="mailto:?to=&subject=Washington%20Update%20from%20CHG%20%26%20Associates&body=CHG%20%26%20Associates%20has%20published%20legislative%20news%20related%20to%20transit.%20Please%20take%20a%20look%3A%20http%3A%2F%2Fwww.chgassociates.com%2F%23wu" class="fa fa-share-alt share">&nbsp;share Washington Update</a>
                         </div>
                     </div>
 
@@ -540,8 +406,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <section id="portfolio" class="about-section">
         <div class="container content-lg">
             <div class="title-v1">
-                <h2>Work for Our Clients</h2>
-                <p>Here are some projects CHG &amp; Associates has completed</p>
+                <h2>Our Work</h2>
+                <p>Here are some projects CHG has completed</p>
             </div>
 
 
@@ -558,7 +424,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <div class="cbp-item rail motion">
                         <a href="assets/ajax/project1.html" class="cbp-caption cbp-singlePageInline" data-title="World Clock Widget<br>by Paul Flavius Nechita">
                             <div class="cbp-caption-defaultWrap">
-                                <img src="images/portfolio/frontrunner.jpg" alt="">
+                                <img src="images/portfolio/frontrunner.a141b7f4.jpg" alt="">
                             </div>
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignLeft">
@@ -573,7 +439,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <div class="cbp-item rail">
                         <a href="assets/ajax/project1.html" class="cbp-caption cbp-singlePageInline" data-title="Bolt UI<br>by Tiberiu Neamu">
                             <div class="cbp-caption-defaultWrap">
-                                <img src="images/portfolio/mid-jordan.jpg" alt="">
+                                <img src="images/portfolio/mid-jordan.549b1a4a.jpg" alt="">
                             </div>
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignLeft">
@@ -588,7 +454,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <div class="cbp-item bus motion">
                         <a href="assets/ajax/project1.html" class="cbp-caption cbp-singlePageInline" data-title="WhereTO App<br>by Tiberiu Neamu">
                             <div class="cbp-caption-defaultWrap">
-                                <img src="images/portfolio/medical-center.jpg" alt="">
+                                <img src="images/portfolio/medical-center.c464a9a9.jpg" alt="">
                             </div>
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignLeft">
@@ -603,7 +469,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <div class="cbp-item environmental bus">
                         <a href="assets/ajax/project1.html" class="cbp-caption cbp-singlePageInline" data-title="iDevices<br>by Tiberiu Neamu">
                             <div class="cbp-caption-defaultWrap">
-                                <img src="images/portfolio/hub-extension.jpg" alt="">
+                                <img src="images/portfolio/hub-extension.58890f14.jpg" alt="">
                             </div>
                             <div class="cbp-caption-activeWrap">
                                 <div class="cbp-l-caption-alignLeft">
@@ -693,7 +559,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </div>
 -->
                 </div>
-                <!--
+<!--
                 <div class="cbp-l-loadMore-button">
                     <a href="assets/ajax/loadMore.html" class="cbp-l-loadMore-button-link">LOAD MORE</a>
                 </div> -->
@@ -707,26 +573,26 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 </div>
                 <ul class="owl-clients-v2">
                     <li class="item">
-                        <a href="http://www.rideuta.com"><img src="images/clients/uta.png" alt="Utah Transit Authority"></a>
+                        <a href="#"><img src="images/clients/uta.62109e5f.png" alt="Utah Transit Authority"></a>
                     </li>
                     <li class="item">
-                        <a href="http://www.rtcwashoe.com/"><img src="images/clients/rtc.png" alt="Reno Transit Authority Washoe"></a>
+                        <a href="#"><img src="images/clients/rtc.f4420300.png" alt="Reno Transit Authority Washoe"></a>
                     </li>
                     <li class="item">
-                        <a href="http://www.cityofsparks.us/"><img src="images/clients/sparks.png" alt="City of Sparks"></a>
+                        <a href="#"><img src="images/clients/sparks.b61ef783.png" alt="City of Sparks"></a>
                     </li>
                     <li class="item">
-                        <a href="http://www.bnbiz.org/Home.aspx"><img src="images/clients/edc.png" alt="Bloomington-Normal"></a>
+                        <a href="#"><img src="images/clients/uta.62109e5f.png" alt="Utah Transit Authority"></a>
                     </li>
                     <li class="item">
-                        <a href="http://www.cityofportaransas.org/index.cfm"><img src="images/clients/portAransas.png" alt="City of Port Aransas"></a>
+                        <a href="#"><img src="images/clients/rtc.f4420300.png" alt="Reno Transit Authority Washoe"></a>
                     </li>
 
                 </ul>
             </div>
         </div>
 
-        <!--<div class="testimonials-v3">
+        <div class="testimonials-v3">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
@@ -761,7 +627,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </div>
                 </div>
             </div>
-        </div>-->
+        </div>
     </section>
     <!-- End Portfolio Section -->
 
@@ -770,7 +636,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         <div class="container content-lg">
             <div class="title-v1">
                 <h2>Contact Us</h2>
-                <p>CHG &amp; Associates is happy to answer any questions you may have. Please see our contact information below.</p>
+                <p>CHG & Associates is happy to answer any questions you may have. Please see our contact information below.</p>
             </div>
 
             <div class="row contacts-in">
@@ -781,16 +647,16 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
                     <ul class="list-unstyled">
                         <li><i class="fa fa-home"></i>1660 L St. NW Suite 501 Washington DC 20036</li>
-                        <li><i class="fa fa-phone"></i><a href="tel:2029692090"> 1-(202) 969 2090</a></li>
+                        <li><i class="fa fa-phone"></i> 1-(202) 969 2090</li>
                         <li><i class="fa fa-fax"></i> 1-(202) 969 2091</li>
-                        <li><i class="fa fa-envelope"></i> <a href="mailto:anjagraves@chgassociates.com">anjagraves@chgassociates.com</a></li>
+                        <li><i class="fa fa-envelope"></i> <a href="info@example.com">anjagraves@chgassociates.com</a></li>
                     </ul>
                 </div>
 
             </div>
 
             <div class="copyright-section">
-                <p>2015 &copy; All Rights Reserved. CHG &amp; Associates</p>
+                <p>2015 &copy; All Rights Reserved. CHG & Associates</p>
                 <span class="page-scroll"><a href="#intro"><i class="fa fa-angle-double-up back-to-top"></i></a></span>
             </div>
     </section>
@@ -838,40 +704,6 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         });
 
     </script>
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-65252181-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-65252181-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
     <!--[if lt IE 9]>
         <script src="assets/plugins/respond.js"></script>
         <script src="assets/plugins/html5shiv.js"></script>
@@ -884,4 +716,23 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <![endif]-->
 </body>
 
-</html>
+</html> [4mUsed --force, continuing.[24m[39m
+Minified 1 files (1 failed)
+
+[31mDone, but with warnings.[39m
+
+
+Execution Time (2015-07-18 03:10:43 UTC)
+loading tasks                 250ms  █ 2%
+loading grunt-contrib-jshint  157ms  █ 1%
+concurrent:test               858ms  ███ 7%
+loading grunt-browser-sync    726ms  ██ 6%
+browserSync:test               2.3s  ███████ 19%
+loading grunt-mocha           125ms  █ 1%
+mocha:all                     862ms  ███ 7%
+wiredep:app                   267ms  █ 2%
+concurrent:dist                5.3s  ███████████████ 44%
+loading grunt-contrib-cssmin  156ms  █ 1%
+loading grunt-contrib-uglify  203ms  █ 2%
+Total 12s
+

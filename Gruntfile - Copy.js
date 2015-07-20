@@ -187,7 +187,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: '<%= config.app %>/*.html'
+      html: '<%= config.app %>/index.html'
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
@@ -199,8 +199,8 @@ module.exports = function (grunt) {
           '<%= config.dist %>/styles'
         ]
       },
-      html: ['<%= config.dist %>/**/*.html'],
-      css: ['<%= config.dist %>/**/*.css']
+      html: ['<%= config.dist %>/{,*/}*.html'],
+      css: ['<%= config.dist %>/styles/{,*/}*.css']
     },
 
     // The following *-min tasks produce minified files in the dist folder
@@ -284,11 +284,10 @@ module.exports = function (grunt) {
           cwd: '<%= config.app %>',
           dest: '<%= config.dist %>',
           src: [
-            '*.{ico,png,txt,jpg}',
+            '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*',
-            'assets/**/*.*'
+            'styles/fonts/{,*/}*.*'
           ]
         }, {
           expand: true,
@@ -366,13 +365,13 @@ module.exports = function (grunt) {
     'useminPrepare',
     'concurrent:dist',
     'postcss',
-    //'concat',
-    //'cssmin',
-    //'uglify',
+    'concat',
+    'cssmin',
+    'uglify',
     'copy:dist',
     'filerev',
     'usemin',
-    //'htmlmin'
+    'htmlmin'
   ]);
 
   grunt.registerTask('default', [
